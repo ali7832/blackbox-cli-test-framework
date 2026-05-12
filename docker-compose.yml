@@ -1,0 +1,6 @@
+version: '3.9'
+
+services:
+  blackbox:
+    build: .
+    container_name: blackbox-cli-framework
