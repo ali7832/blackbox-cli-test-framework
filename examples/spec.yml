@@ -1,0 +1,10 @@
+suite: smoke-tests
+tests:
+  - name: python-version
+    command: python --version
+    expected_exit_code: 0
+    stdout_contains: Python
+  - name: echo-command
+    command: echo hello-blackbox
+    expected_exit_code: 0
+    stdout_contains: hello-blackbox
