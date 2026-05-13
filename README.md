@@ -1,18 +1,27 @@
 # Blackbox CLI Test Framework
 
-Production-ready black-box testing framework for validating command-line tools across languages and runtimes.
+Enterprise-style black-box CLI validation framework for platform teams, release engineers, and QA automation workflows. It validates command-line tools through observable behavior instead of internal implementation details.
 
-## Features
+## What This System Demonstrates
+
+This repository is structured like an internal developer-platform testing tool. It includes YAML-driven test specifications, subprocess execution, configurable runtime defaults, timeout handling, assertion evaluation, suite summaries, JSON reporting, Docker deployment, CI, operational notes, and architecture decisions.
+
+## Core Capabilities
 
 - YAML-based test specifications
-- Command execution with timeout handling
+- Cross-runtime command execution for Python, Node, Go, Rust, Bash, and compiled CLIs
+- Configurable default timeout, report path, and fail-fast behavior
 - Exit-code assertions
 - stdout/stderr assertions
-- JSON report generation
-- CLI runner
+- Timeout detection
+- Duration tracking per command
+- Suite-level summaries with pass rate and total duration
+- JSON report generation for CI dashboards
+- CLI runner for local and automated usage
 - Docker-ready runtime
 - GitHub Actions CI
-- Pytest test suite
+- Pytest coverage
+- Operations runbook and architecture decision record
 
 ## Quickstart
 
@@ -31,10 +40,30 @@ tests:
     command: python --version
     expected_exit_code: 0
     stdout_contains: Python
+    timeout_seconds: 5
 ```
+
+## Runtime Configuration
+
+See `.env.example` for default timeout, report output, and fail-fast configuration.
+
+## Documentation
+
+- `OPERATIONS.md`
+- `docs/adr-001-blackbox-execution-model.md`
+- `examples/spec.yml`
+
+## Production Extension Roadmap
+
+- JUnit XML output for CI dashboards
+- Parallel execution workers
+- Container-isolated command execution
+- Plugin-based assertion packs
+- Historical report storage and trend analysis
+- HTML dashboard reports
 
 ## Portfolio Highlights
 
-- Demonstrates test automation and developer tooling skills
-- Useful for validating Python, Node, Go, Rust, Bash, and compiled CLIs
-- Built as a deployable, CI-friendly quality engineering platform
+- Demonstrates serious QA automation and developer tooling experience
+- Shows CI/CD release-gate design, subprocess orchestration, structured reporting, and configurable execution
+- Strong fit for platform engineering, test automation, DevOps, and backend infrastructure roles
