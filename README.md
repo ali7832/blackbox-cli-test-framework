@@ -1,10 +1,10 @@
 # Blackbox CLI Test Framework
 
-Enterprise-style black-box CLI validation framework for platform teams, release engineers, and QA automation workflows. It validates command-line tools through observable behavior instead of internal implementation details.
+Enterprise CLI validation framework for platform teams, release engineers, and QA automation workflows. It validates command-line tools through observable behavior instead of internal implementation details.
 
 ## What This System Demonstrates
 
-This repository is structured like an internal developer-platform testing tool. It includes YAML-driven test specifications, subprocess execution, configurable runtime defaults, timeout handling, assertion evaluation, suite summaries, JSON reporting, Docker deployment, CI, operational notes, and architecture decisions.
+ includes YAML-driven test specifications, subprocess execution, configurable runtime defaults, timeout handling, assertion evaluation, suite summaries, JSON reporting, Docker deployment, CI, operational notes, and architecture decisions.
 
 ## Core Capabilities
 
@@ -62,7 +62,7 @@ See `.env.example` for default timeout, report output, and fail-fast configurati
 - Historical report storage and trend analysis
 - HTML dashboard reports
 
-## Portfolio Highlights
+## Highlights
 
 - Demonstrates serious QA automation and developer tooling experience
 - Shows CI/CD release-gate design, subprocess orchestration, structured reporting, and configurable execution
