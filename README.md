@@ -2,6 +2,12 @@
 
 Enterprise CLI validation framework for platform teams, release engineers, and QA automation workflows. It validates command-line tools through observable behavior instead of internal implementation details.
 
+## Product Demo Video
+
+
+https://github.com/user-attachments/assets/7faa2597-28e3-4bf2-be26-503a84690db6
+
+
 ## What This System Demonstrates
 
 This project includes YAML-driven test specifications, subprocess execution, configurable runtime defaults, timeout handling, assertion evaluation, suite summaries, JSON reporting, Docker deployment, CI, operational notes, architecture decisions, and a premium React quality dashboard.
