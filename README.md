@@ -4,7 +4,7 @@ Enterprise CLI validation framework for platform teams, release engineers, and Q
 
 ## What This System Demonstrates
 
- includes YAML-driven test specifications, subprocess execution, configurable runtime defaults, timeout handling, assertion evaluation, suite summaries, JSON reporting, Docker deployment, CI, operational notes, and architecture decisions.
+This project includes YAML-driven test specifications, subprocess execution, configurable runtime defaults, timeout handling, assertion evaluation, suite summaries, JSON reporting, Docker deployment, CI, operational notes, architecture decisions, and a premium React quality dashboard.
 
 ## Core Capabilities
 
@@ -22,6 +22,7 @@ Enterprise CLI validation framework for platform teams, release engineers, and Q
 - GitHub Actions CI
 - Pytest coverage
 - Operations runbook and architecture decision record
+- Multi-page React/Vite QA command center frontend
 
 ## Quickstart
 
@@ -30,6 +31,27 @@ pip install .[dev]
 blackbox run examples/spec.yml
 pytest -q
 ```
+
+## Frontend Quality Dashboard
+
+The `frontend/` directory contains a premium React/Vite dashboard called BlackboxIQ.
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`.
+
+Frontend pages:
+
+- Overview: release quality KPIs, pass-rate trends, runtime coverage
+- Spec Builder: interactive YAML test-spec designer and preview
+- Execution Lab: suite result simulation, evidence cards, execution matrix
+- Failure Intelligence: failure classification and root-cause style review
+- Reports: JSON report preview and release evidence summary
+- CI/CD: pipeline integration and release-gate controls
 
 ## Example Spec
 
@@ -65,5 +87,5 @@ See `.env.example` for default timeout, report output, and fail-fast configurati
 ## Highlights
 
 - Demonstrates serious QA automation and developer tooling experience
-- Shows CI/CD release-gate design, subprocess orchestration, structured reporting, and configurable execution
+- Shows CI/CD release-gate design, subprocess orchestration, structured reporting, configurable execution, and stakeholder-facing quality analytics
 - Strong fit for platform engineering, test automation, DevOps, and backend infrastructure roles
